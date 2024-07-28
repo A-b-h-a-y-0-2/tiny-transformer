@@ -8,4 +8,5 @@ WORK THROUGH FOR TASK 1-
 WORK THROUGH FOR TASK 2-
 1- Recreated the transformer backbone from the paper,"https://arxiv.org/pdf/2306.12098", MSW-Transformer: Multi-Scale Shifted Windows
 Transformer Networks for 12-Lead ECG Classification.
-2- Haven't put through training due to lack of resources but implementation details are available in the paper.
+2- Haven't put through training due to lack of resources but implementation is created based on the details that are available in the paper.
+3- data loading is set up through the findings of paper "https://arxiv.org/pdf/2311.04229"
