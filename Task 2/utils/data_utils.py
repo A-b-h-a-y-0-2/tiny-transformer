@@ -8,8 +8,8 @@ from scipy.signal import resample
 
 def load_ptb_xl(path, sampling_rate=100):
     # PTB-XL dataset is loaded from a csv file, the ecg_id is used as the index
-    Y = pd.read_csv(os.path.join(path, 'ptbxl_dataset.csv'),
-                    index_col='ecg_id')
+    path = "/home/deadbytes/Documents/ML/tiny-transformer/Task 2/data/ptb-xl-a-large-publicly-available-electrocardiography-dataset-1.0.3"
+    Y = pd.read_csv(os.path.join(path, 'ptbxl_database.csv'), index_col='ecg_id')
     # scp_codes column contains diagnostic information in string format, which is converted to a dictionary format using eval.
     Y.scp_codes = Y.scp_codes.apply(lambda x: eval(x))
     X = []
